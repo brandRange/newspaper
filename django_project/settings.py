@@ -149,4 +149,4 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-CSRF_TRUSTED_ORIGINS = ["https://*.netlify.com", "https://*.herokuapp.com"]
+CSRF_TRUSTED_ORIGINS = ["https://*.render.com", "https://*.herokuapp.com"]
