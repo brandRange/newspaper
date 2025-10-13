@@ -12,6 +12,9 @@ class Article(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
+    class Meta:
+        ordering = ['-date']  
+
     def __str__(self):
         return self.title
     
