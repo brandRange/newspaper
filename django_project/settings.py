@@ -29,7 +29,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = [".netlify.com", ".herokuapp.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["https://newspaper-3pd3.onrender.com", ".render.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -149,4 +149,4 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-CSRF_TRUSTED_ORIGINS = ["https://newspaper-3pd3.onrender.com","https://*.render.com"]
+CSRF_TRUSTED_ORIGINS = ["https://*.render.com"]
